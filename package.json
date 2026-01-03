@@ -1,0 +1,25 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "Repo for a simple weather widget, made to practice UI/UX design.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiBlackbird/Weather-Widget.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iiBlackbird/Weather-Widget/issues"
+  },
+  "homepage": "https://github.com/iiBlackbird/Weather-Widget#readme",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  }
+}
