@@ -4,12 +4,15 @@ const path = require('node:path')
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 800,
-        height: 800,
-        titleBarStyle: 'hidden',
-        ...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
+        width: 400,
+        height: 600,
+        frame: false,
+        //titleBarStyle: 'hidden',
+        //...(process.platform !== 'darwin' ? { titleBarOverlay: true } : {}),
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
+            preload: path.join(__dirname, 'preload.js'),
+            contextIsolation: true,
+            enableRemoteModule: false
         }
 
     });

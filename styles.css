@@ -3,9 +3,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     font-family: Arial, sans-serif;
     --background-blue: rgb(112, 227, 235);
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scroll bar track */
+  width: 0px;    /* Optional: Sets the width to zero */
+}
+
+/* For compatibility with Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* For compatibility with Edge and IE */
+* {
+  -ms-overflow-style: none;
 }
 
 #background {
